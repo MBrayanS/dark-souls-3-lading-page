@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'OptimusPrinceps';
+    src: url('../font/OptimusPrinceps.ttf');
+}
+
+@font-face {
+    font-family: 'OptimusPrincepsSemibold';
+    src: url('../font/OptimusPrincepsSemibold.ttf');
+}
+
+:root {
+    --white: #ffffff;
+    --cor-primaria: #2D2B2C;
+    --cor-secundaria: #363B40;
+    --cor-terciaria: #F23535;
+    --cor-quartenaria: #B0B0B0;
+    --cor-primaria-30: #2d2b2c4d;
+    --cor-primaria-75: #2d2b2cbf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a { text-decoration: none; }
+li { list-style: none; }
+html { scroll-behavior: smooth; }
+
+::-webkit-scrollbar {
+    width: .8rem;
+    background-color: var(--cor-primaria);
+}
+
+::-webkit-scrollbar-thumb { background-color: var(--cor-terciaria); }
+
+header,
+section h1,
+section h2 {
+    font-size: 2.4rem;
+    font-family: 'OptimusPrincepsSemibold';
+}
+
+section {
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: max-content;
+    display: grid;
+    align-items: center;
+    min-height: 100vh;
+    padding: 4.8rem 3.2rem;
+}
+
+section p, section li, section h3, footer { font-size: 1.8rem; }
+
+.container {
+    background-color: var(--cor-primaria-75);
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    gap: 3.2rem;
+    padding: 3.2rem 8.6rem 6.4rem;
+    border-radius: .4rem;
+}
+
+body, html {
+    color: var(--white);
+    font-family: 'OptimusPrinceps';
+    font-size: 10px;
+}
+
+header {
+    background-color: var(--cor-primaria-75);
+    width: 100%;
+    padding: 1.6rem 0;
+    position: fixed;
+    z-index: 1;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    gap: 3.2rem;
+}
+
+header a { color: var(--white); }
+
+.apresentacao {
+    background-image: url('../images/background-img1.png');
+    height: 100vh;
+}
+
+.apresentacao img {
+    max-width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sobre { background-image: url('../images/background-img2.png'); }
+
+.sobre .imagens {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre .imagens img {
+    max-width: 30%;
+    max-height: 20rem;
+    width: 35rem;
+    height: auto;
+}
+
+.requisitos { background-image: url('../images/background-img3.png'); }
+
+.requisitos ul, .requisitos div { width: 100%; }
+
+.requisitos ul {
+    display: grid;
+    gap: .8rem;
+    padding: 1.6rem 0
+}
+
+.requisitos .listas {
+    display: flex;
+    gap: 3.2rem;
+}
+
+.requisitos li { color: var(--cor-quartenaria); }
+.requisitos li span { color: var(--white); }
+
+.contato { background-image: url('../images/background-img4.png'); }
+
+.contato .cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.2rem;
+    justify-content: space-around;
+}
+
+.contato .card {
+    background-color: var(--cor-primaria);
+    width: 100%;
+    max-width: 52rem;
+    display: grid;
+    justify-items: center;
+    gap: 3.2rem;
+    padding: 3.2rem 6.4rem;
+    border-radius: .8rem;
+}
+
+.card-quem-somos p { text-align: justify; }
+
+.card-formulario form {
+    width: 100%;
+    display: grid;
+    gap: 1.6rem;
+}
+
+.card-formulario label,
+.card-formulario input,
+.card-formulario textarea,
+.card-formulario button {
+    font-size: 1.8rem;
+    font-family: 'OptimusPrinceps';
+}
+
+.card-formulario label {
+    display: grid;
+    gap: .8rem;
+}
+
+.card-formulario input,
+.card-formulario textarea {
+    color: var(--white);
+    outline: none;
+    background-color: var(--cor-primaria);
+    padding: .8rem 1.6rem;
+    border: solid .3rem var(--cor-secundaria);
+    border-radius: .4rem;
+}
+
+.card-formulario textarea {
+    height: 9.6rem;
+    resize: none;
+}
+
+.card-formulario button {
+    color: var(--white);
+    background-color: var(--cor-terciaria);
+    padding: 1.6rem 0;
+    margin-top: 2.4rem;
+    border: none;
+    border-radius: .4rem;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--cor-primaria);
+    width: 100%;
+    text-align: center;
+    padding: 3.2rem 0;
+}
