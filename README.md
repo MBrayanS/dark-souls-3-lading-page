@@ -5,3 +5,7 @@ Este projeto é a resolução de um exercicio passado no meu curso Desenvolvedor
 A tarefa se resume em criar uma lading page utilizando HTML e CSS. O tema era livre e eu escolhi o meu jogo favorito, o `Dark Souls III`.
 
 Foi um projeto bem simples de fazer já que estou em um nivel mais avançado. Mas ainda assim pude solidificar ainda mais os conteúdo.
+
+# Deploy
+
+Voce pode acompanhar o resultado através [deste link](https://dark-souls-3-lading-page.vercel.app/).
